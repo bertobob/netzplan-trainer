@@ -60,7 +60,7 @@ netzplan/
 **Voraussetzungen:** Python 3.10+
 
 ```bash
-git clone https://github.com/dein-name/netzplan-trainer.git
+git clone https://github.com/bertobob/netzplan-trainer.git
 cd netzplan-trainer
 pip install -r requirements.txt
 python main.py
