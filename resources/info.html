@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anleitung zum Netzplantrainer</title>
+    <style>
+        body{background-color: #f0f0f0;
+            font-size: 24px;
+        padding : 10%;}
+        h2 {text-align:Center;
+            background-color: lightyellow;}
+        
+    </style>
+</head>
+<body>
+    <h2> Anleitung</h2>
+    <article>
+        Dieses Tool generiert zufällige Netzplantabellen, anhand derer ein Netzplan erstellt werden kann.
+        Hierzu können im oberen Teil die Werte Schritt für Schritt eingetragen werden. Im unteren Teil können
+        alle Schritte angezeigt werden, auf die Eingabefläche übertragen und die Eingaben auf Richtigkeit überprüft werden.
+        Es können bis zu 26 Events und 6 Ebenen gewählt werden, empfohlen sind 3 Ebenen.
+        <br>
+
+        Die Schritte umfassen:
+        <ol>
+            <li>
+                Schritt Vorwärtsterminierung
+                <ul>
+                    <li>
+                        Eintragen der Dauer
+                    </li>
+                    <li>
+                        Frühester Anfangszeitpunkt(FAZ) und frühester Endzeitpunkt(FEZ) Eintragen
+                    </li>
+                    <li>
+                        Man beginnt mit dem ersten Event("A"), dessen FAZ = 0 ist. FEZ ist FAZ+Dauer.
+                    </li>
+                    <li>
+                        Der FAZ der anderen Events ist der FEZ des Vorgängers
+                    </li>
+                </ul>  
+            </li>
+            <br>
+            <li>
+                Schritt Rückwärtsterminierung
+                <ul>
+                    <li>
+                        Ermitteln des spätesten Anfangszeitpunkts(SAZ) und des spätesten Endzeitpunkt(SEZ)
+                    </li>
+                    <li>
+                        Hierzu beginnt man beim letzten Event, SEZ gleich des FEZ ist, SAZ=FEZ-Dauer
+                    </li>
+                    <li>
+                        Der SEZ ist gleich dem SAZ des Nachfolgers. Gibt es mehrere Nachfolger wird der kleinste SAZ gewählt
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Schritt Pufferzeiten berechnen
+                <ul>
+                    <li>
+                        In diesem Schritt gilt es, den Gesamtpuffer(GP) und freien Puffer(FP) einzutragen
+                    </li>
+                    <li>
+                        GP = SAZ-FAZ
+                    </li>
+                    <li>
+                        FP = FAZ des nach Nachfolgers - eigene FEZ. Bei mehreren Nachfolgern wird der kleinste FAZ gewählt
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Schritt Kritischen Pfad ermitteln
+                <ul>
+                    <li>
+                        Der Kritische Pfad zeigt die Abfolge der Events, die keinen Puffer aufweisen
+                    </li>
+                    <li>
+                        Beginnend beim 1. Event("A"), verläuft er entlang der Events die weder GP noch FP haben
+                    </li>
+                </ul>
+            </li>
+
+        </ol>
+    </article>
+
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+QWidget {
+    background-color: #f0f0f0;  /* Hintergrundfarbe des Fensters */
+    font-family: "Arial";       /* Standard-Schriftart */
+    font-size: 14px;            /* Standard-Schriftgröße */
+    color: black;               /* Standard-Schriftfarbe */
+}
+
+QLabel {
+                background-color: #f0f0f0
+                
+}
+
+QLineEdit {
+
+                background-color: lightblue;  /* Hintergrundfarbe */
+                border: 2px solid gray;        /* Rahmenfarbe */
+                border-radius: 10px;          /* Runde Ecken */
+                padding: 5px;                  /* Innenabstand */
+                font-family: "Arial";
+                font-size: 12px;  
+                font-weight: bold;
+                min-height: 15px;             /* Minimale Höhe */
+
+                 max-height: 15px;
+              
+
+            }
+QLineEdit:focus {
+                background-color: lightblue;
+            }
+#incr_button{
+                min-width: 20px;   
+                max-width: 20px;
+                min-height: 20px;   
+                max-height: 20px;
+                border-radius: 10px;
+                border: 2px red;
+                background-color: lightblue;
+
+}
+
+#go_button{
+                border-radius:10px;          
+                min-height: 30px;   
+                max-height: 30px;
+                background-color: lightyellow;
+                font-size: 18px;
+
+}
+
+#label_border
+{
+    border:1px solid gray;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+}
+#input_canvas
+{
+    background-color:lightyellow;
+}
+QLineEdit#input_no_border{
+    min-height: 20px;
+    max-height: 20px; /* Maximalhöhe auf die gewünschte Größe begrenzen */
+    
+    padding: 0px; /* Kein Innenabstand */
+    margin: 0px; /* Kein äußerer Abstand */
+    border: none;                 /* Kein Rahmen */
+    border-radius: 0px;
+}
+QLineEdit#input_border{
+    min-height: 20px;
+    max-height: 20px; /* Maximalhöhe auf die gewünschte Größe begrenzen */
+    border: 1px solid gray; /* Optional: Sichtbare Rahmen für Testzwecke */
+    padding: 0px; /* Kein Innenabstand */
+    margin: 0px; /* Kein äußerer Abstand */
+   
+    border-radius: 0px;
+}
+QLabel#input_no_border{
+    background-color: lightblue;  /* Hintergrundfarbe */
+                border: 2px solid gray;        /* Rahmenfarbe */
+                border-radius: 10px;          /* Runde Ecken */
+                padding: 5px;                  /* Innenabstand */
+                font-family: "Arial";
+                font-size: 12px;  
+                font-weight: bold;
+                min-height: 15px;             /* Minimale Höhe */
+
+                 max-height: 15px;
+    min-height: 20px;
+    max-height: 20px; 
+    
+    padding: 0px; /* Kein Innenabstand */
+    margin: 0px; /* Kein äußerer Abstand */
+    border: none;                 /* Kein Rahmen */
+    border-radius: 0px;
+}
+QLabel#input_border{
+    background-color: lightblue;  /* Hintergrundfarbe */
+                border: 2px solid gray;        /* Rahmenfarbe */
+                border-radius: 10px;          /* Runde Ecken */
+                padding: 5px;                  /* Innenabstand */
+                font-family: "Arial";
+                font-size: 12px;  
+                font-weight: bold;
+                min-height: 15px;             /* Minimale Höhe */
+
+                 max-height: 15px;
+    min-height: 20px;
+    max-height: 20px; /* Maximalhöhe auf die gewünschte Größe begrenzen */
+    border: 1px solid gray; /* Optional: Sichtbare Rahmen für Testzwecke */
+    padding: 0px; /* Kein Innenabstand */
+    margin: 0px; /* Kein äußerer Abstand */
+   
+    border-radius: 0px;
+}
+
+
+QTableWidget{
+    border:none;
+    gridline-color:lightblue
+ 
+}
+
+QHeaderView::section {
+    font-size:10px; /* Schriftgröße der Kopfzeile */
+    font-weight: bold; /* Fettgedruckte Schrift */
+    background-color: #f0f0f0; /* Hintergrundfarbe */
+    color: black; /* Schriftfarbe */
+    padding: 5px; /* Abstand innerhalb der Header */
+    border: 1px solid #dcdcdc; /* Rahmenfarbe */
+}
+
