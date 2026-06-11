@@ -5,6 +5,11 @@ Ein interaktives Desktop-Tool zum Üben der Netzplantechnik
 <img width="2550" height="1376" alt="grafik" src="https://github.com/user-attachments/assets/ff3f3793-2ce3-4e8d-8614-446cc9211237" />
 
 ---
+# Netzplan Trainer
+
+📥 Download der aktuellen Windows-Version:
+
+https://github.com/bertobob/netzplan-trainer/releases/latest
 
 ## Über Netzplantechnik
 
